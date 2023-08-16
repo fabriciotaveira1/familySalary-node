@@ -63,3 +63,7 @@ td, th{
     border: none;
 }
 
+#button:hover{
+    background-color: rgba(0, 0, 0, 0.565);
+    color: white;
+}

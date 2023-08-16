@@ -12,38 +12,42 @@
 <body>
     <div class="pagina">
         <header></header>
-        <div class="content">
-            <input type="text" name="empregado" id="empregado" placeholder="Empregado"> <br>
-            <input type="number" name="filhos" id="filhos" placeholder="Quantidade de filhos menores de 14 anos" min="0"
-                max="14"> <br>
-            <input type="number" name="salario" id="salario" placeholder="Salário Contribuição"> <br>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Salário Contribuição</th>
-                    <th>Conta do Salário Família</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Até R$ 806,80</td>
-                    <td>R$ 41,37 por filho</td>
-                </tr>
+        <form action="">
+            <div class="content">
+                <input type="text" name="empregado" id="empregado" placeholder="Empregado"> <br>
+                <input type="number" name="filhos" id="filhos" placeholder="Quantidade de filhos menores de 14 anos"
+                    min="0" required> <br>
+                <input type="number" name="salario" id="salario" placeholder="Salário Contribuição"> <br>
 
-                <tr>
-                    <td>Entre R$ 806,81 e R$ 1.212,64</td>
-                    <td>R$ 29,16 por filho</td>
-                </tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Salário Contribuição</th>
+                            <th>Conta do Salário Família</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Até R$ 806,80</td>
+                            <td>R$ 41,37 por filho</td>
+                        </tr>
 
-                <tr>
-                    <td>Mais de R$ 1.1212,64</td>
-                    <td>Não Há</td>
-                </tr>
-            </tbody>
-        </table>
-        <input type="button" value="Calcular" id="button">
+                        <tr>
+                            <td>Entre R$ 806,81 e R$ 1.212,64</td>
+                            <td>R$ 29,16 por filho</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mais de R$ 1.1212,64</td>
+                            <td>Não Há</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" value="" id="button">Calcular</button>
+            </div>
+        </form>
     </div>
 </body>
+<script src="js/index.js"></script>
 
 </html>
