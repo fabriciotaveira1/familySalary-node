@@ -1,0 +1,29 @@
+
+.btn-standard{
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #0b5684;
+    border: none;
+}
+
+.btn-standard:hover{
+    background-color: rgba(0, 0, 0, 0.565);
+    color: white;
+}
+
+#btnSignIn{
+    background-color: #006400;
+}
+
+#btnSignIn:hover{
+    background-color: rgba(0, 0, 0, 0.565) ;
+}
+
+#btnForgetPassword{
+    width: 60%;
+    height: 50px;
+    
+}

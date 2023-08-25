@@ -20,7 +20,7 @@ header{
     background-position: center;
 }
 
-.content input{
+input{
     width: 90%;
     border: none;
     border-bottom: 1px solid gray;
@@ -29,13 +29,13 @@ header{
     transition: 1s;
 }
 
-.content input:focus{   
+input:focus{   
     transition: 1s;
     border-radius: 10px;
     background-color: #0b5684;
     color: white;
 }
-.content input:focus::placeholder{
+input:focus::placeholder{
     color: white;
 }
 
@@ -52,10 +52,8 @@ td, th{
     padding: 15px;
 }
 
-#button{
-    width: 40%;
+.btn-standard{
     height: 50px;
-    margin: 15px 30%;
     border-radius: 10px;
     font-weight: bold;
     color: white;
@@ -63,7 +61,7 @@ td, th{
     border: none;
 }
 
-#button:hover{
+.btn-standard:hover{
     background-color: rgba(0, 0, 0, 0.565);
     color: white;
 }
