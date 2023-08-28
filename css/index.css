@@ -25,5 +25,9 @@
 #btnForgetPassword{
     width: 60%;
     height: 50px;
-    
+    background-color: #8B0000;  
+}
+
+#btnForgetPassword:hover{
+    background-color: rgba(0, 0, 0, 0.565) ;
 }

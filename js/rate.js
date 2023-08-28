@@ -1,32 +1,36 @@
-const empregado = document.getElementById("empregado");
+const employer = document.getElementById("employer");
 const filhos = document.getElementById("filhos");
-const salario = document.getElementById("salario");
+const salary = document.getElementById("salary");
 const button = document.getElementById("button");
-var familia = 0;
+var family = 0;
 
-button.addEventListener('click', validarButton);
+button.addEventListener('click', validateButton);
 
-function validarButton() {
-    if (empregado.value === null || empregado.value === undefined || empregado.value === "") {
+/*  validateButton
+    Function: validate if the name, son and salary are filled correctly
+    Author: Fabas
+*/
+function validateButton() {
+    if (employer.value === null || employer.value === undefined || employer.value === "") {
         window.alert("Por favor, Insira seu nome corretamente!");
     }
     else {
-        if (filhos.value === null || filhos.value === undefined || filhos.value === "") {
-            window.alert("Por favor, Insira a quantidade de filhos corretamente!");
+        if (son.value === null || son.value === undefined || son.value === "") {
+            window.alert("Por favor, Insira a quantidade de son corretamente!");
         }
         else {
-            if (salario.value <= 806.80) {
-                 familia = filhos.value * 41.37;
+            if (salary.value <= 806.80) {
+                 family = son.value * 41.37;
             }
             else{
-                if(salario.value >= 800.81 & salario.value <= 1212.64){
-                 familia = filhos.value * 29.16;
+                if(salary.value >= 800.81 & salary.value <= 1212.64){
+                 family = son.value * 29.16;
                 }
                 else{
-                    familia = 0;
+                    family = 0;
                 }
             }
-            window.alert(empregado.value + " seu salário família é de " + familia);
+            window.alert(employer.value + " seu salário família é de " + family);
         }
 
     }
