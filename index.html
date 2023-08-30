@@ -38,22 +38,73 @@
                     </div>
                     <div class="container-fluid m-0 p-0 d-flex align-items-center justify-content-center gap-3 p-2">
                         <button type="button" class="btn-standard" id="btnIn">Entrar</button>
-                        <button type="button" class="btn-standard" id="btnSignIn" data-toggle="modal" data-target="#signInModal">Cadastrar-se</button>
+                        <button type="button" class="btn-standard" id="btnSignIn" data-bs-toggle="modal"
+                            data-bs-target="#signInModal">Cadastrar-se</button>
                     </div>
                     <div class="container fluid my-2 p-0 d-flex align-items-center justify-content-center">
-                        <button type="button" class="btn-standard " id="btnForgetPassword" data-toggle="modal" data-target="#orgetPasswordModal">Esqueceu a senha ?</button>
+                        <button type="button" class="btn-standard " id="btnForgetPassword" data-toggle="modal"
+                            data-target="#forgetPasswordModal">Esqueceu a senha ?</button>
                     </div>
                 </div>
             </form>
 
-        </main>
-        <!-- --------- MAIN ---------- -->
+            <div class="modal fade" id="signInModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- HEADER -->
+                        <div class="modal-header d-flex align-items-center justify-content-center">
+                            <h4 class="modal-title">
+                                Cadastro
+                            </h4>
+                        </div>
+                        <!-- HEADER -->
+                        <!-- BODY -->
+                        <div class="modal-body">
+                            <form action="#">
+                                <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input class="form-control" type="text" name="email" id="email"
+                                        placeholder="Digiteo seu email" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="nameComplete" class="form-label">Nome</label>
+                                    <input class="form-control" type="text" name="nameComplete" id="nameComplete"
+                                        placeholder="Digite o seu nome completo" required min="10">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="password" class="form-label">Senha</label>
+                                    <input class="form-control" type="password" name="password" id="password"
+                                        placeholder="Digite aqui a sua senha" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="userType">Tipo de Usuário</label>
+                                    <select class="form-select" aria-label="Selecione uma opção" name="userType" id="userType">
+                                        <option selected>Escolha uma opção</option>
+                                        <option value="userNormal">Beneficiário</option>
+                                        <option value="userPublicServer">Servidor Público</option>
+                                        <option value="userAdmnin">Administrador</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- BODY -->
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" type="button">Enviar</button>
+                                    <button class="btn btn-danger" type="button" >Sair</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <!-- --------- MAIN ---------- -->
 
-        <!-- --------- FOOTER ---------- -->
-        <footer>
+    <!-- --------- FOOTER ---------- -->
+    <footer>
 
-        </footer>
-        <!-- --------- FOOTER ---------- -->
+    </footer>
+    <!-- --------- FOOTER ---------- -->
     </div>
     <!-- --------- PAGE ---------- -->
 </body>
