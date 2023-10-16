@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    
-    <link rel="stylesheet" href="../css/rate.css">
+
+    <link rel="stylesheet" href="../css/general.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
+
 </head>
 
 <body>
     <div class="page">
         <header></header>
         <form action="">
-            <div class="content">
-                <input type="text" name="employer" id="employer" placeholder="Empregado"> <br>
-                <input type="number" name="son" id="son" placeholder="Quantidade de filhos menores de 14 anos"
-                    min="0" required> <br>
-                <input type="number" name="salary" id="salary" placeholder="Salário Contribuição"> <br>
+            <div class="container">
+                <div class="form-group">
+                    <input class="" type="text" name="employer" id="employer" placeholder="Empregado"> <br>
+                    <input type="number" name="son" id="son" placeholder="Quantidade de filhos menores de 14 anos"
+                        min="0" required> <br>
+                    <input type="number" name="salary" id="salary" placeholder="Salário Contribuição"> <br>
+                </div>
 
                 <table>
                     <thead>
@@ -47,9 +49,15 @@
                         </tr>
                     </tbody>
                 </table>
-                <button class="btn btn-primary p-2" type="button" id="button">Calcular</button>
+                <div class="me-auto" id="btn">
+                    <button class="btn-standard" type="button" id="">Calcular</button>
+                </div>
             </div>
         </form>
+
+
+
+
     </div>
 </body>
 <script src="../js/index.js"></script>
