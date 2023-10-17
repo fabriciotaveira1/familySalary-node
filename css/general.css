@@ -1,3 +1,5 @@
+
+/*  PAGE CONFIGURATION */
 .page {
     width: 30%;
     height: auto;
@@ -16,7 +18,7 @@ header {
 
 
 .btn-standard{
-    width: 40%;
+    width: auto;
     height: 50px;
     border-radius: 10px;
     font-weight: bold;
@@ -84,4 +86,21 @@ th {
 #btn{
     width: 100%;
     margin: 2% 25%;
+}
+
+#employer img{
+    width: 3rem;
+    height: auto;
+}
+
+#employer button{
+    border: none;
+}
+
+/* BUTTONS COLORS */
+#btnBack{
+    background-color: #b81414 ;
+}
+#btnBack:hover{
+    background-color: #0b5684;
 }

@@ -1,5 +1,5 @@
 const employer = document.getElementById("employer");
-const filhos = document.getElementById("filhos");
+const son = document.getElementById("son");
 const salary = document.getElementById("salary");
 const button = document.getElementById("button");
 var family = 0;
@@ -16,7 +16,7 @@ function validateButton() {
     }
     else {
         if (son.value === null || son.value === undefined || son.value === "") {
-            window.alert("Por favor, Insira a quantidade de son corretamente!");
+            window.alert("Por favor, Insira a quantidade de Filhos corretamente!");
         }
         else {
             if (salary.value <= 806.80) {
@@ -36,3 +36,4 @@ function validateButton() {
     }
     
 }
+
