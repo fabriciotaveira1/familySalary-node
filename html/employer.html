@@ -14,6 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+
+
 </head>
 
 <body>
@@ -26,13 +28,13 @@
             <nav class="navbar">
                 <div class="container-fluid d-flex align-items-center justify-content-center">
                     <div class="container d-flex align-items-center justify-content-between" id="employer">
-                        <button id="btnHamburguer"><img
-                                src="../assets/icons/menu-black-rounded-square-interface-button_icon-icons.com_72990.svg"
-                                alt="menu hamburguer"></button>
-                        <button class="btn-standard" id="btnBack">VOLTAR</button>
-                        <button id="btnSettings"><img src="../assets/icons/1486564402-settings_81520.svg" alt="settings"></button>
+                        <button id="btnHamburguer"><img width="94" height="94"
+                                src="https://img.icons8.com/3d-fluency/94/menu.png" alt="menu" /></button>
+                        <button class="btn-standard" id="btnBack"><a href="employer.html">VOLTAR</a></button>
+                        <button id="btnSettings"><img src="../assets/icons/1486564402-settings_81520.svg"
+                                alt="settings"></button>
                     </div>
-        
+
                     <ul class="navbar nav flex-column" id="menuEmployer" style="display:none;">
                         <li class="nav-item m-1">
                             <button class="btn-standard" id="btnReports">GERAR RELATÓRIO</button>
@@ -49,14 +51,44 @@
                             <button class="btn-standard" id="btnReports">ADMINISTRAR CONTAS</button>
                         </li>
                         <li class="nav-item m-1">
-                            <button class="btn-standard" id="btnElegibility">SAIR</button>
+                            <button class="btn-standard" id="btnGoOut"><a href="../index.html">SAIR</a></button>
                         </li>
-                        
-                      
                     </ul>
-
+                    <hr id="line">
                 </div>
             </nav>
+
+            <div class="modal-body">
+                <form action="#">
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input class="form-control" type="text" name="email" id="email" placeholder="Digiteo seu email"
+                            required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="nameComplete" class="form-label">Nome</label>
+                        <input class="form-control" type="text" name="nameComplete" id="nameComplete"
+                            placeholder="Digite o seu nome completo" required min="10">
+                    </div>
+                    <div class="mb-2">
+                        <label for="password" class="form-label">Senha</label>
+                        <input class="form-control" type="password" name="password" id="password"
+                            placeholder="Digite aqui a sua senha" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="userType">Tipo de Usuário</label>
+                        <select class="form-select" aria-label="Selecione uma opção" name="userType" id="userType">
+                            <option selected>Escolha uma opção</option>
+                            <option value="userNormal">Beneficiário</option>
+                            <option value="userPublicServer">Servidor Público</option>
+                           
+                        </select>
+
+                        <div class="modal-footer">
+                                    <button class="btn btn-success" type="button">Cadastrar</button>
+                                    <button class="btn btn-danger" type="reset" >Limpar</button>
+                                </div>
+                    </div>
         </main>
 
 

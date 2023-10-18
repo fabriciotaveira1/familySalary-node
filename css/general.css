@@ -7,6 +7,11 @@
 
 }
 
+.page a{
+    color: white;
+    text-decoration: none;
+}
+
 header {
     width: 100%;
     height: 300px;
@@ -14,6 +19,10 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+main{
+    background-color: #0b56840e;
 }
 
 
@@ -51,7 +60,7 @@ header {
 }
 
 input {
-    width: 100%;
+    width: 80%;
     border: none;
     border-bottom: 1px solid gray;
     margin: 20px;
@@ -98,9 +107,16 @@ th {
 }
 
 /* BUTTONS COLORS */
-#btnBack{
+#btnBack, #btnGoOut{
     background-color: #b81414 ;
 }
-#btnBack:hover{
+#btnBack:hover, #btnGoOut:hover{
     background-color: #0b5684;
+}
+
+#line{
+    color: #266892;
+    background-color: #266892 ;
+    width: 100%;
+    height: 1rem;
 }
