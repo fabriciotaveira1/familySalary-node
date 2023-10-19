@@ -1,0 +1,22 @@
+{
+  "name": "salariofamlia",
+  "version": "1.0.0",
+  "description": "A Beta program to implement the family salary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabricio176/salarioFamlia.git"
+  },
+  "author": "FabasDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabricio176/salarioFamlia/issues"
+  },
+  "homepage": "https://github.com/fabricio176/salarioFamlia#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
