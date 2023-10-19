@@ -15,3 +15,10 @@ Um projeto iniciado no curso de FrontEnd pelo senai Brasília, que foi continuad
 * Gerencia as requisições, rotas e URLs, entre outras funcionalidades
 
 ```npm instal express```
+
+1. Rodar o Projeto
+1. Acessar o projeto no navegador
+```http://localhost:8080```
+1. Instalar o módulo para reiniciar o servidor sempre que houver alteração no código fonte, g significa globalmente
+```npm install -g nodemon```
+```npm install --save-dev nodemon```
