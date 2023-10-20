@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Sistema Salário Família</title>
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../css/general.css">
@@ -59,7 +59,7 @@
             </nav>
 
             <div class="modal-body">
-                <form action="#">
+                <form method="POST" action="/registerBeneficiary">
                     <div class="mb-2">
                         <label for="email" class="form-label">Email</label>
                         <input class="form-control" type="text" name="email" id="email" placeholder="Digiteo seu email"
@@ -67,7 +67,7 @@
                     </div>
                     <div class="mb-2">
                         <label for="nameComplete" class="form-label">Nome</label>
-                        <input class="form-control" type="text" name="nameComplete" id="nameComplete"
+                        <input class="form-control" type="text" name="nome" id="nameComplete"
                             placeholder="Digite o nome completo do Beneficiário" required min="10">
                     </div>
                     <div class="mb-2">
@@ -77,19 +77,24 @@
                     </div>
                     <div class="mb-2">
                         <label for="dateBirthday" class="form-label">Data de Nascimento</label>
-                        <input class="form-control" type="date" name="dateBirthday" id="dateBirthday"
+                        <input class="form-control" type="date" name="dataNascimento" id="dateBirthday"
                              required>
                     </div>
                     <div class="mb-2">
                         <label for="adress" class="form-label">Endereço</label>
-                        <input class="form-control" type="text" name="adress" id="adress"
+                        <input class="form-control" type="text" name="endereco" id="adress"
                              required min="10">
+                    </div>
+                    <div class="mb-2">
+                        <label for="numberTel" class="form-label">Telefone</label>
+                        <input class="form-control" type="tel" name="numberTel" id="numberTel" placeholder="(99)99999-99999"
+                             maxlength="11">
                     </div>
                     
                     
 
                         <div class="modal-footer">
-                                    <button class="btn btn-success" type="button">Cadastrar Beneficiário</button>
+                                    <button class="btn btn-success" type="submit">Cadastrar Beneficiário</button>
                                     <button class="btn btn-danger" type="reset" >Limpar</button>
                                 </div>
                     </div>
