@@ -1,7 +1,7 @@
 const conn = require('sequelize');
 const db = require('./db');
 
-const Beneficiary = db.define('Beneficiary',{
+const Beneficiary = db.define('Beneficiarios',{
     beneficiarioID: {
         type: conn.INTEGER,
         autoIncrement:true,
@@ -32,11 +32,6 @@ const Beneficiary = db.define('Beneficiary',{
         type: conn.STRING,
         allowNull: false,
         unique: true,
-    },
-    dataCadastro: {
-        type: conn.DATE,
-        allowNull: true,
-        defaultValue: conn.literal('CURRENT_TIMESTAMP'),
     }
 });
 
