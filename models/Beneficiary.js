@@ -35,6 +35,19 @@ const Beneficiary = db.define('Beneficiarios',{
     }
 });
 
+const Accounts = db.define('Contas', {
+    contaId:{
+        type: conn.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+        allowNull:false,
+    },
+    beneficiarioId:{
+        type: conn.INTEGER,
+        
+    }
+})
+
 //If not exists the table, he are created
 //User.sync();
 
